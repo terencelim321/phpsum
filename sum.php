@@ -3,7 +3,7 @@
 <body>
 
 Number 1 is :<?php echo $_POST["num1"]; ?><br>
-Number 2 is: <?php echo $_POST["num2"]; ?>
+Number 2 is: <?php echo $_POST["num2"]; ?><br>
 
 <?php
 $num1 = $_POST["num1"];
