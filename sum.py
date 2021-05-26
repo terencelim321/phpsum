@@ -1,4 +1,5 @@
 import sys, json
-x = sys.argv[1]
-print (x)
+x = int(sys.argv[1])
+y = int(sys.argv[2])
+print (x + y)
 
