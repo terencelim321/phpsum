@@ -1,6 +1,4 @@
-import sys
-
+import sys, json
 x = sys.argv[1]
-y = sys.argv[2]
+print (x)
 
-sum = int(x) + int(y)
