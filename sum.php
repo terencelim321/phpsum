@@ -9,14 +9,9 @@ Number 2 is: <?php echo $_POST["num2"]; ?>
 $num1 = $_POST["num1"];
 $num2 = $_POST["num2"];
 
-$output = shell_exec("python sum.py $num1 $num2");
-#echo "sum of both numbers = " $output;
+$age = array("Peter"=>35, "Ben"=>37, "Joe"=>43);
 
-$myObj->name = "John";
-$myObj->age = 30;
-$myObj->city = "New York";
-
-$myJSON = json_encode($myObj);
+echo json_encode($age);
 
 echo $myJSON;
 ?>
