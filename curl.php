@@ -6,8 +6,8 @@ $url = 'https://phpsum.herokuapp.com/curl.json';
 curl_setopt($curl, CURLOPT_URL, $url);
 
 #run curl (execute http request)
-$data = curl_exec($curl);
-$a = json_decode(file_get_contents($data), true);
+#$data = curl_exec($curl);
+#$a = json_decode(file_get_contents($data), true);
 #echo $a;
 #close curl resource
 curl_close($curl);
