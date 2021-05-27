@@ -9,7 +9,7 @@ curl_setopt($curl, CURLOPT_URL, $url);
 $data = curl_exec($curl);
 $data = json_decode(file_get_contents('php://input'), true);
 print_r($data);
-echo "hello";
+echo $data;
 #$a = json_decode(file_get_contents($data), true);
 #echo $a;
 #close curl resource
