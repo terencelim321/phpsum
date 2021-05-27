@@ -18,7 +18,7 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, $numbers);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $output = curl_exec($curl);
 curl_close($curl);
-echo $output;
+
 ?>
 
 <html>
@@ -28,6 +28,8 @@ echo $output;
   Input number 1 :<input  name="number1"  type="number"> <br>
   Input number 2 :<input  name="number2"  type="number"><br>
   <input  type="submit"  name="submit" >
+
 </form>
+<?echo $output;?>
 </body>
 </html>
