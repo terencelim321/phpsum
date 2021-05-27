@@ -1,7 +1,7 @@
 <?php
 #create curl resource request
 $curl = curl_init(); //$ data type curl resource
-$url = 'https://reqres.in/api/users?page=2';
+$url = 'https://phpsum.herokuapp.com/curl.json';
 #set curl options
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
