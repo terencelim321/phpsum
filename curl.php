@@ -1,7 +1,7 @@
 <?php
 #create curl resource request
 $curl = curl_init(); //$ data type curl resource
-$url = 'http://www.google.com';
+$url = 'https://phpsum.herokuapp.com/json.php';
 #set curl options
 curl_setopt($curl, CURLOPT_URL, $url);
 
