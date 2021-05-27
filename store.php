@@ -8,7 +8,7 @@ print_r($_POST);
 $num1 = $_POST['number1'];
 $num2 = $_POST['number2'];
 $sum = $num1 + $num2;
-print_r($sum);
+
 echo 'sum is ' . $sum;
 
 ?>
