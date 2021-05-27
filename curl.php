@@ -8,7 +8,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true)
 
 #run curl (execute http request)
 $data = curl_exec($curl);
-$decoded = json_decode($data);
+$decoded = json_decode($data, true);
 print_r($decoded);
 #$a = json_decode(file_get_contents($data), true);
 #echo $a;
