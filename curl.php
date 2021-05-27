@@ -14,6 +14,6 @@ $decoded = json_decode($data, true);
 $num1 = $decoded['numbers']['number1'];
 $num2 = $decoded['numbers']['number2'];
 $sum = $num1 + $num2 ;
-echo 'The sum is' $sum;
+echo "The sum is" . $sum;
 curl_close($curl);
 ?>
