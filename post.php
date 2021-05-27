@@ -1,6 +1,6 @@
 <?php
 $numbers = array(
-                    'number1' => 1
+                    'number1' => 1,
                     'number2' => 2
 
 );
