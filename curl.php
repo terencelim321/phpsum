@@ -10,7 +10,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $data = curl_exec($curl);
 $decoded = json_decode($data, true);
 print_r($decoded);
-echo $decoded['page'];
+echo $decoded['numbers']['number1'];
 
 curl_close($curl);
 ?>
