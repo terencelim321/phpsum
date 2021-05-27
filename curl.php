@@ -1,12 +1,13 @@
 <?php
-#create curl resource
+#create curl resource request
 $curl = curl_init(); //$ data type curl resource
+$url = 'http://www.google.com';
 #set curl options
-curl_setopt($curl, CURLOPT_URL, 'http://www.google.com');
+curl_setopt($curl, CURLOPT_URL, $url);
 
 #run curl (execute http request)
-curl_exec($curl);
-
+$result = curl_exec($curl);
+echo $result;
 #close curl resource
 curl_close($curl);
 ?>
