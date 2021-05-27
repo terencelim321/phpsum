@@ -4,7 +4,7 @@ $numbers = array(
                     'number2' => 2
 
 );
-$str = http_build_query($numbers)
+$str = http_build_query($numbers);
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, "https://phpsum.herokuapp.com/store.php");
