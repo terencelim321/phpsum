@@ -25,8 +25,8 @@ echo $output;
 <body>
  
 <form method = "POST" action = "" >
-  <input  name="number1"  type="number"> 
-  <input  name="number2"  type="number1">
+  Input number 1 :<input  name="number1"  type="number"> <br>
+  Input number 2 :<input  name="number2"  type="number"><br>
   <input  type="submit"  name="submit" >
 </form>
 </body>
