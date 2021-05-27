@@ -8,7 +8,7 @@ curl_setopt($curl, CURLOPT_URL, $url);
 #run curl (execute http request)
 $data = curl_exec($curl);
 $a = json_decode($data, true);
-echo $a;
+echo $a['numbers']['number1'];
 #close curl resource
 curl_close($curl);
 ?>
