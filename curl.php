@@ -9,11 +9,11 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 #run curl (execute http request)
 $data = curl_exec($curl);
 $decoded = json_decode($data, true);
-print_r($decoded);
+#print_r($decoded);
 
 $num1 = $decoded['numbers']['number1'];
 $num2 = $decoded['numbers']['number2'];
 $sum = $num1 + $num2 ;
-echo $sum;
+echo 'The sum is' $sum;
 curl_close($curl);
 ?>
