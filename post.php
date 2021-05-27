@@ -1,7 +1,12 @@
 <?php
+if(isset($_POST["submit"]))
+{
+    $num1 = $_POST['number1'];
+    $num2 = $_POST['number2'];
+}
 $numbers = array(
-                    'number1' => 1,
-                    'number2' => 2
+                    'number1' => $num1,
+                    'number2' => $num2
 
 );
 #$str = http_build_query($numbers);
@@ -15,3 +20,14 @@ $output = curl_exec($curl);
 curl_close($curl);
 echo $output;
 ?>
+
+<html>
+<body>
+ 
+<form method = "POST" action = "" >
+  <input  name="number1"  type="number"> 
+  <input  name="number2"  type="number1">
+  <input  type="submit"  name="submit" >
+</form>
+</body>
+</html>
