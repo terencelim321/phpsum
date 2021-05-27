@@ -10,7 +10,10 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $data = curl_exec($curl);
 $decoded = json_decode($data, true);
 print_r($decoded);
-echo $decoded['numbers']['number1'];
 
+$num1 = $decoded['numbers']['number1'];
+$num2 = $decoded['numbers']['number2'];
+$sum = $num1 + $num2 ;
+echo $sum;
 curl_close($curl);
 ?>
